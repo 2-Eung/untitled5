@@ -1,12 +1,14 @@
+import java.util.Arrays;
 public class Main {
-    public static void greet() {
-        System.out.println("Hello, World!");
-    }
-    public static void greet (String a) {
-        System.out.println("Hello, " + a);
-    }
     public static void main(String[] args) {
-        greet();
-        greet("Alice!");
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(numbers);
+        System.out.println(Arrays.toString(numbers));
+        for (int i = 0; i < 5; i++) {
+            System.out.println(numbers[i]);
+        }
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
     }
 }
