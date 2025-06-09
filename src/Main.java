@@ -1,15 +1,22 @@
 import java.util.Arrays;
 public class Main {
-    public static int sums(int[] a) { // 굳이 함수로 할 필요는 없다 있다면 2,3,4,5,배수로 n개의 숫자를 출력한다 라고하면
-        int dd = 0;                   // 매개변수로 배수의 값과 n 을 받아서 함수형식으로 만들 수 있다.
-        for (int i = 0; i < a.length; i++) {
-            dd += a[i];
-        };
-        return dd;
-    }
     public static void main(String[] args) {
-        int[] numbers = {2, 4, 6, 8, 10};
-        int sum = sums(numbers);
-        System.out.println(sum);
+        String message = "Hello, Java!";
+
+        System.out.println(message.length());
+        System.out.println(message.toUpperCase());
+        System.out.println(message.toLowerCase());
+        System.out.println(message.indexOf("l")); // 인덱스번호여서 0 부터 세야한다. (공백포함)
+        /*int a;
+        for (int i = 0; i < message.length; i++) {
+            if (message[i] == "J"){ // 일반적인 배열이 아니라 String을 이용한 '문자열' 이어서 배열명[n] 으로 접근이 불가능하다.
+                a = i;
+                System.out.println(i);
+            }*/
+        for (int i = 0; i < message.length(); i++) {
+            if (message.charAt(i) == 'l') { // '문자' 여서 ' ' 를 사용한다.
+                System.out.println(i);
+            }
+        }
     }
 }
